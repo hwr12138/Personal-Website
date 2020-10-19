@@ -2,7 +2,8 @@ body {
     background-image: url(./Coffee.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    font-family: Arial;
+    font-family: 'Roboto', sans-serif;
+    min-width: 800px;
 }
 
 a:link {
@@ -19,19 +20,51 @@ h1 {
     font-size: 30px;
     text-align: right;
     color: beige;
-    padding: 0px 30px;
+    padding: 0px 80px;
 }
 
 .header {
     color: rgb(255, 255, 255);
-    padding: 350px;
+    padding: 380px;
     text-align: center;
 }
 
-.header h1 {
-    font-size: 50px;
-    text-decoration: underline;
-    
+.header h1::before {
+    content: "Haowen Rui";
+    animation-name: fade;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+    0% {font-size:600%; opacity:1;}
+    25% {font-size:570%; opacity:0;}
+    50% {font-size:600%; opacity:1;}
+    65% {font-size:570%; opacity:0;}
+    80% {font-size:600%; opacity:1; content: "Interactive Resume"}
+    90% {font-size:570%; opacity:0;}
+    100% {font-size:600%;opacity:1; content: "Haowen Rui"}
+}
+
+.sidebar {
+    position: fixed;
+    width: 70px;
+    height: 100%;
+    background: black;
+    top: 0%;
+    left: 0%;
+    border: 3px white;
+    overflow: hidden;
+}
+
+.sidebar p {
+    color: white;
+    text-align: center;
+}
+
+.sidebar p:hover {
+    transition: 0.4s;
+    color: rgb(255, 206, 146);
 }
 
 .profile {
