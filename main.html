@@ -4,6 +4,8 @@
         <title>Haowen's Website</title>
         <!--star rating-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
         <!--style sheet-->
         <link href="./style.css" type="text/css" rel="stylesheet">
     </head>
@@ -11,12 +13,22 @@
         <div class="resume">
             <a href="./Resume.pdf" target="_blank" style="text-decoration: none;"><p>Resume</p></a>
         </div>
-        <div class="header">
-            <h1>Haowen Rui</h1>
-            <h2>Interactive Resume</h2>
+        <div class="header" id="header">
+            <h1></h1>
+        </div>
+        <div class="sidebar">
+            <a href="#header"><p>Cover</p></a>
+            <br><br>
+            <a href="#profile"><p>Profile</p></a>
+            <br><br>
+            <a href="#abilities"><p>Abilities</p></a>
+            <br><br>
+            <a href="#projects"><p>Projects</p></a>
+            <br><br>
+            <a href="#contacts"><p>Contacts</p></a>
         </div>
         <div class="main">
-            <div class="profile">
+            <div class="profile" id="profile">
                 <h1 style="font-size: 70px;">Profile</h1>
                 <table>
                     <tr>
@@ -49,7 +61,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="abilities">
+            <div class="abilities" id="abilities">
                 <h1 style="font-size: 70px;">Abilities</h1>
                 <table>
                     <tr>
@@ -186,7 +198,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="projects">
+            <div class="projects" id="projects">
                 <h1 style="font-size: 70px;">Projects</h1>
                 <a href="./PersonalWebsite.html">
                     <div class="container">
@@ -213,8 +225,11 @@
                 </a>
             </div>
         </div>
-        <footer>
+        <footer id="contacts">
             <h1>Contacts</h1>
+            <h2 style="text-align: center;">Please feel free to <a href="mailto: anson.rui@mail.utoronto.ca" 
+                target="_blank"><span style="font-weight: bold; color: rgb(185, 73, 185);">Email
+                </span></a> me!</h2>
             <table class="contacts">
                 <tr>
                     <th>
